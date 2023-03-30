@@ -6,6 +6,15 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
+    public void testSize(){
+        Radio radio = new Radio(50);
+        radio.setCurrentStation(35);
+        int expected = 35;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected,actual);
+    }
+
+    @Test
     public void shuldSetStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(5);
