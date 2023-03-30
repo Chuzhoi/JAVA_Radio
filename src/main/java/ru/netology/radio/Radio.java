@@ -14,10 +14,14 @@ public class Radio {
     public Radio(){
 
     }
-
-
     public int getCurrentStation() {
         return currentStation;
+    }
+    public int getMaxStation(){
+        return maxStation;
+    }
+    public int getMinStation(){
+        return minStation;
     }
 
     public void setCurrentStation(int newCurrentStation) {

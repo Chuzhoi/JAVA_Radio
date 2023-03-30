@@ -15,6 +15,15 @@ public class RadioTest {
     }
 
     @Test
+    public void testSizeNew() {
+        Radio radio = new Radio(70);
+
+        Assertions.assertEquals(0, radio.getCurrentStation());
+        Assertions.assertEquals(69, radio.getMaxStation());
+        Assertions.assertEquals(0, radio.getMinStation());
+    }
+
+    @Test
     public void shuldSetStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(5);
