@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
-    public void testSize(){
+    public void testSize() {
         Radio radio = new Radio(50);
         radio.setCurrentStation(35);
         int expected = 35;
         int actual = radio.getCurrentStation();
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -119,6 +119,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void minusMinVoulem() {
         Radio radio = new Radio();

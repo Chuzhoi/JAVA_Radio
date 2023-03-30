@@ -11,16 +11,20 @@ public class Radio {
     public Radio(int size) {
         maxStation = size - 1;
     }
-    public Radio(){
+
+    public Radio() {
 
     }
+
     public int getCurrentStation() {
         return currentStation;
     }
-    public int getMaxStation(){
+
+    public int getMaxStation() {
         return maxStation;
     }
-    public int getMinStation(){
+
+    public int getMinStation() {
         return minStation;
     }
 
@@ -69,7 +73,8 @@ public class Radio {
         }
     }
 
-    public void decreaseVolume() {;
+    public void decreaseVolume() {
+        ;
         if (currentVolume > mimVolume) {
             currentVolume = currentVolume - 1;
         } else {
